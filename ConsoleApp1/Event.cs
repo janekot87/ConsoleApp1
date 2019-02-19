@@ -11,13 +11,9 @@ namespace ConsoleApp1
         public DateTime StartDate { get; set; }
         public bool IsLive { get; set; }
 
-        public Event (int id, string name, int order, DateTime startDate, bool isLive)
+        public Event ()
         {
-            Id = id;
-            Name = name;
-            Order = order;
-            StartDate = startDate;
-            IsLive = isLive;
+           
         }
 
         public string FullName
@@ -26,6 +22,33 @@ namespace ConsoleApp1
 
             set => FullName = Name + StartDate;
         }
+
+        public void AddId(int id)
+        {
+            Id = id;
+        }
+
+        public void AddName(string n)
+        {
+            Name = n;
+        }
+
+        public void AddOrder(int o)
+        {
+            Order = o;
+        }
+
+        public void AddStartDate(DateTime d)
+        {
+            StartDate = d;
+        }
+
+        public void AddIsLive(bool l)
+        {
+            IsLive = l;
+        }
+
     }
+
    
 }
