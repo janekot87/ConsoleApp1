@@ -7,9 +7,15 @@ namespace ConsoleApp1
     {
         public static void Main()
         {
-            var evt1 = new Event();
+            var evt1 = Event.GetEvent();
+            var evt2 = Event.GetEvent();
+            var evt3 = Event.GetEvent();
 
-            
+
+
+
+
+            /*var evt1 = new Event();
             Console.WriteLine("Enter Id: ");
             evt1.Id = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter Name: ");
@@ -47,7 +53,7 @@ namespace ConsoleApp1
             evt3.StartDate = Convert.ToDateTime(Console.ReadLine());
             Console.WriteLine("Enter IsLive true or false: ");
             evt3.IsLive = Convert.ToBoolean(Console.ReadLine());
-            Console.Write("\r\n");
+            Console.Write("\r\n");*/
 
 
 
@@ -75,7 +81,7 @@ namespace ConsoleApp1
                 Console.WriteLine(x.Order);
                 Console.WriteLine(x.StartDate);
                 Console.WriteLine(x.IsLive);
-                Console.Write("\r\n");
+                Console.WriteLine(); 
 
 
               }
@@ -93,7 +99,7 @@ namespace ConsoleApp1
                Console.WriteLine(a);
 
             }
-            Console.Write("\r\n");
+            Console.WriteLine();
 
             List<Event> evtFuture = new List<Event>();
             foreach (var b in allEvents)
@@ -114,7 +120,7 @@ namespace ConsoleApp1
                 Console.WriteLine(x.Order);
                 Console.WriteLine(x.StartDate);
                 Console.WriteLine(x.IsLive);
-                Console.Write("\r\n");
+                Console.WriteLine(); 
 
 
             }
