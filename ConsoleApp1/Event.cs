@@ -23,17 +23,18 @@ namespace ConsoleApp1
             var evt = new Event();
 
 
-            Console.WriteLine("Enter Id: ");
+            Console.WriteLine("Enter Event Id: ");
             evt.Id = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Name: ");
+            Console.WriteLine("Enter Event Name: ");
             evt.Name = Console.ReadLine();
-            Console.WriteLine("Enter Order: ");
+            Console.WriteLine("Enter Event Order: ");
             evt.Order = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter StartDate: ");
+            Console.WriteLine("Enter Event StartDate: ");
             evt.StartDate = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Enter IsLive true or false: ");
+            Console.WriteLine("Enter Event IsLive true or false: ");
             evt.IsLive = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine();
+            Console.Clear();
             return evt;
             
         }

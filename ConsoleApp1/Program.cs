@@ -7,55 +7,11 @@ namespace ConsoleApp1
     {
         public static void Main()
         {
-            var evt1 = Event.GetEvent();
+            /*var evt1 = Event.GetEvent();
             var evt2 = Event.GetEvent();
             var evt3 = Event.GetEvent();
 
-
-
-
-
-            /*var evt1 = new Event();
-            Console.WriteLine("Enter Id: ");
-            evt1.Id = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Name: ");
-            evt1.Name = Console.ReadLine();
-            Console.WriteLine("Enter Order: ");
-            evt1.Order = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter StartDate: ");
-            evt1.StartDate = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Enter IsLive true or false: ");
-            evt1.IsLive = Convert.ToBoolean(Console.ReadLine());
-
-            Console.Write("\r\n");
-
-            var evt2 = new Event();
-            Console.WriteLine("Enter Id: ");
-            evt2.Id = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Name: ");
-            evt2.Name = Console.ReadLine();
-            Console.WriteLine("Enter Order: ");
-            evt2.Order = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter StartDate: ");
-            evt2.StartDate = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Enter IsLive true or false: ");
-            evt2.IsLive = Convert.ToBoolean(Console.ReadLine());
-            Console.Write("\r\n");
-
-            var evt3 = new Event();
-            Console.WriteLine("Enter Id: ");
-            evt3.Id = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Name: ");
-            evt3.Name = Console.ReadLine();
-            Console.WriteLine("Enter Order: ");
-            evt3.Order = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter StartDate: ");
-            evt3.StartDate = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Enter IsLive true or false: ");
-            evt3.IsLive = Convert.ToBoolean(Console.ReadLine());
-            Console.Write("\r\n");*/
-
-
+            
 
             List<Event> allEvents = new List<Event>();
                 allEvents.Add(evt1);
@@ -120,10 +76,47 @@ namespace ConsoleApp1
                 Console.WriteLine(x.Order);
                 Console.WriteLine(x.StartDate);
                 Console.WriteLine(x.IsLive);
-                Console.WriteLine(); 
+                Console.WriteLine();
+                }*/
 
 
+                var sel1 = Selection.GetSelection();
+                var sel2 = Selection.GetSelection();
+                var sel3 = Selection.GetSelection();
+                var sel4 = Selection.GetSelection();
+
+                var mrk1 = new Market(3);
+                mrk1.Id = 1;
+                mrk1.Name = "Market1";
+                mrk1.SportId = 1;
+                mrk1.LeagueId = 1;
+                mrk1.AddSelection(sel1);
+                mrk1.AddSelection(sel2);
+                mrk1.AddSelection(sel3);
+                mrk1.AddSelection(sel4);
+
+            foreach (var i in mrk1.Selections)
+            {
+                Console.WriteLine(i.Id);
+                Console.WriteLine(i.Name);
+                Console.WriteLine(i.Title);
+                Console.WriteLine(i.IsDisabled);
+                Console.WriteLine(i.Status);
+                Console.WriteLine();
             }
+
+
+
+
+
+
+
+
+
+
+
+
+            
 
 
 
